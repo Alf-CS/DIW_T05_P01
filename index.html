@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Práctica 5_1 Bootstrap </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Para las pruebas de código utilizamos un CSS local -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
+
+	<!-- Cambiaremos el enlace local al enlace CDN al servidor
+	<link href="https://cdn.jsde1ivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	-->
+	
+	<!-- Opcional: solo en caso de usar componentes que dependan de JS
+	<script src="https : //cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js></script>
+	-->
+	
+	<!-- Si dependen de JS y de Popper:
+	<script src="https : //cdn . jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	-->
+	
+	<!-- Comprobar en https://getbootstrap.com/docs/5.3/getting-started/introduction/ si son las últimas -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+	<div class="container"> <!-- apertura CONTAINER principal-->
+
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- barra NAV superior-->
+			<!-- adaptado a partir del código BOOTSTRAP en
+				https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works
+			-->
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">LOGO</a>
+			 <!-- hace falta todo esto de BUTTON? 
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			-->
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#sec_home">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_about">About</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Portfolio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Product</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Career</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Blog</a>
+				  </li>
+				  <li class="nav-item btn btn-primary">
+					<a class="nav-link" href="#">Contact us</a>
+				  </li>
+
+				</ul>
+
+			  </div>
+			</div>
+		</nav>
+
+	
+		<!-- prueba del esquema de 12 columnas de BOOTSTRAP-->
+		<div class="row">
+		  <div class="col-md-4">Columna 1 - 4 columnas</div>
+		  <div class="col-md-3">Columna 2 - 3 columnas</div>
+		  <div class="col-md-5">Columna 3 - 5 columnas </div>
+		</div>
+
+		
+		<section id="sec_home"> <!-- parte 1 (HOME) con 2 títulos y la imagen principal/primera-->
+			<div class="container">
+				<div class="text-center">
+					<h1><b> We Create Simple Solutions</b></h1>	
+					<h2>For Your Complex Task</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</p>
+					<a class="btn btn-primary" href="#sec_portfolio">Our Works</a>
+					<a class="btn btn-secondary" href="#sec_contact">Know more</a>
+					<img class="img-grande" src="./assets/img/01.png" alt="Resolviendo un problema">
+				</div>
+			</div>
+		</section>
+
+		
+			
+		<!-- parte 2 con LEYENDA + IMAGEN
+			a partir del ejemplo de HEROES de BOOTSTRAP: Responsive left-aligned hero with image-->
+
+		<section id="sec_about">
+			<div class="container col-xxl-8 px-4 py-5">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+				<div class="col-10 col-sm-8 col-lg-6">
+					<!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+					<img src="assets/img/02.png" class="d-block mx-lg-auto img-fluid" alt="Mujer con globo" width="700" height="500" loading="lazy">
+				</div>
+				<div class="col-lg-6">
+					<h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+					<p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+					<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+					<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+					</div>
+				</div>
+				</div>
+			</div>
+
+
+		<!-- parte 3 con IMAGEN + LEYENDA
+		Lo mismo que tenemos arriba, pero ahora la leyenda está a la derecha
+		-->
+			<div class="container col-xxl-8 px-4 py-5">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+				<div class="col-lg-6">
+					<h1 class="display-5 fw-bold lh-1 mb-3">Responsive right-aligned hero with image</h1>
+					<p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+					<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+					<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+					</div>
+				</div>
+
+				<div class="col-10 col-sm-8 col-lg-6">
+					<!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+					<img src="assets/img/03.png" class="d-block mx-lg-auto img-fluid" alt="Sentado dentro de televisión" width="700" height="500" loading="lazy">
+				</div>
+
+				</div>
+			</div>
+		
+		</section>
+
+		<!-- parte 3 con la CUADRICULA-->
+		<div class="row">
+			<h1> Cuadricula estricta</h1>	
+		</div>
+
+		<!-- parte 4 con GRID de fotos-->
+		<div class="row">
+			<h1> Cuadricula tipo GRID</h1>	
+		</div>
+
+		<!-- parte FORMULARIO-->
+		<div class="row">
+			<h1> Formulario de contacto</h1>	
+		</div>
+
+		<!-- parte FOOTER-->
+		<div class="row">
+			<h1> Footer</h1>	
+		</div>
+
+	</div>  <!-- cierre CONTAINER principal-->
+
+</body>
+
+</html>
