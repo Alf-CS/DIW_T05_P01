@@ -10,4 +10,34 @@ min-height:5rem;
 .enlace{
     color:lightgray;
 }  
+
+
+
+.btn-primary { /*Botón con fondo blanco*/
+    /*width:80%;
+    padding: 10px;*/
+    border-radius: 10px;
+    background-color: #a174db;
+    color: white;
+    border: solid 1px #a174db;
+    /*display:inline;*/
+    transition: font-weight 0.3s ease;
+  }  
+      .btn-primary:hover { /*HOVER sobre botón*/
+          /*width:80%;
+          padding: 10px;*/
+          border-radius: 10px;
+          background-color: #49be55;
+          font-weight: bold;
+      }
+      /*
+      .btn-primary:active{  /*PULSACION sobre botón*/
+        /*width:80%;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        background-color: #49be55;
+        border: solid 1px #a174db;
+      }*/
+  
     
